@@ -27,13 +27,76 @@
     font-weight: bolder;
     border-bottom: 3px solid #222;
     padding-bottom: 10px;
+   
 
 }
 .container .header h3 span{
-    font-weight: 5;
+   font-weight: lighter;
 
 }
 
 .container .gallery{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.container .gallery .flow{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
     
 }
+
+.container .gallery .flow img{
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+    
+}
+
+.container .btn{
+   margin: 40px 0 70px 0 ;
+   background-color: #222;
+   padding: 15px 40px;
+  border-radius: 5px;
+}
+
+.container .btn a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+@media only screen and (max-width:769px){
+     .container .header{
+       width: 100%;
+      
+    
+}
+    .container .gallery{
+        flex-direction: column;
+       
+    }
+
+    .container .gallery .flow{
+             width: 100%;
+    }
+}
+@media only screen and (max-width:640px){
+  .container .header{
+       width: 100%;
+      
+    
+}
+
+
+.container .header h3{
+    font-size: 1em;
+  
+
+}
+}
+
